@@ -1,3 +1,6 @@
+
+#I rejected this file
+
 from tkinter import *
 from tkinter.font import *
 
