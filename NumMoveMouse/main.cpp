@@ -4,6 +4,8 @@ using namespace std;
 
 int main(){
 
-    cout<<"yeah that's right C++";
+    while (true){
 
+        
+    }
 }
