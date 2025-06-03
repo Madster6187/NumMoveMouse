@@ -17,6 +17,8 @@ void moveMouse(float dx, float dy) {
 }
 
 int main(){
+
+    refresh_rate = 75;
     
     while (true){
         if (GetKeyState(VK_NUMPAD4) & 0x8000) {moveMouse(-spd, 0);} // left
@@ -25,5 +27,8 @@ int main(){
         if (GetKeyState(VK_NUMPAD5) & 0x8000) {moveMouse(0, spd);}  // down
         
         if (GetKeyState('T') & 0x8000) {return 0;} // end program
+
+        sleep(1000/refresh_rate) // make it slower
+        
     }
 }
