@@ -19,6 +19,8 @@ void moveMouse(float dx, float dy) {
 int main(){
 
     refresh_rate = 75;
+
+    spd = 10;
     
     while (true){
         if (GetKeyState(VK_NUMPAD4) & 0x8000) {moveMouse(-spd, 0);} // left
