@@ -30,7 +30,7 @@ int main(){
         
         if (GetKeyState('T') & 0x8000) {return 0;} // end program
 
-        sleep(1000/refresh_rate) // make it slower
+        sleep(1000/refresh_rate); // make it slower
         
     }
 }
