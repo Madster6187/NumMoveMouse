@@ -5,7 +5,7 @@ using namespace std;
 
 bool activate = false;
 
-int spd, refresh_rate;
+int speed, refresh_rate;
 
 void moveMouse(float dx, float dy) {
     INPUT input = {0};
@@ -20,11 +20,11 @@ int main(){
 
     refresh_rate = 75;
 
-    spd = 10;
+    speed = 10;
     
     while (true){
-        if (GetKeyState(VK_NUMPAD4) & 0x8000) {moveMouse(-spd, 0);} // left
-        if (GetKeyState(VK_NUMPAD6) & 0x8000) {moveMouse(spd, 0);}  // right
+        if (GetKeyState(VK_NUMPAD4) & 0x8000) {moveMouse(-speed, 0);} // left
+        if (GetKeyState(VK_NUMPAD6) & 0x8000) {moveMouse(speed, 0);}  // right
         if (GetKeyState(VK_NUMPAD8) & 0x8000) {moveMouse(0, -spd);} // up
         if (GetKeyState(VK_NUMPAD5) & 0x8000) {moveMouse(0, spd);}  // down
         
